@@ -8,6 +8,7 @@ import { useState } from 'react';
 import ChatBot from 'react-simple-chatbot'
 import steps from './steps'
 
+import Hero from './Hero';
  
 
 
@@ -15,6 +16,7 @@ function App() {
   const [showBot, toggleBot] = useState(false);
   return (
     <div className="App">
+      <Hero/>
 <ChatBot   headerTitle="SciAstra Bot"
 //aa
 steps={steps}

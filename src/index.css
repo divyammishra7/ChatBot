@@ -3,11 +3,26 @@
   bottom: 0;
   right: 0;
 } */
+body{  overflow-y: hidden;
+  background-color: rgb(0, 13, 13);}
 .bott{
   position: absolute;
   right: 2rem;
   bottom: 0;
+  
   border-radius: 50%;
+}
+.hero{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color:white;
+font-family: sans-serif;
+font-size: 3rem;
+
+
 }
 .react-chatbot-kit-chat-container {
 
