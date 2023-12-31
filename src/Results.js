@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import data from './ResultsData';
+import {data} from './ResultsData';
 function Results({previousStep}) {
     const [results,setResults]=useState([]);
     // console.log(previousStep)
@@ -29,18 +29,18 @@ function Results({previousStep}) {
   return (
     <div className='res'>
         <h2>List of Top Performers of the year {year}</h2>
-
+<ul>
         {results.map((item)=>{
             return(
                 
-                <ul>
                     <li>
                         <img src={item.img} className='img'></img>
                         <span>{item.name}</span>
                     </li>
-                </ul>
+             
             )
         })}
+           </ul>
         </div>
   )
 }

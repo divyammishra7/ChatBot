@@ -1,5 +1,6 @@
 import Misson from "./Misson";
 import Results from "./Results";
+import Research from "./Research";
 const steps=[
     {
       id: '1',
@@ -39,17 +40,26 @@ const steps=[
         { value: 3, label: 'Results', trigger: '7' },
         { value: 4, label: 'Blogs', trigger: 'SciAstra' },
         { value: 5, label: 'Courses', trigger: 'Courses' },
+        { value: 6, label: 'Research Institutes ', trigger: 'Insti' },
         
        
       ],
       
       
     },
+    {id:'Insti',
+message:"Sure,Here are some top Research Institutes In India",
+
+trigger:'showInsti'},
     {id:'7',
      message:"Great! Click on one of the year to know about results",
      trigger:'8'
   
   
+  },{
+    id:'showInsti',
+    component:<Research/>,
+    trigger:'2',
   }
   ,
   {

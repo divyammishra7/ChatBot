@@ -18,10 +18,17 @@ body{  overflow-y: hidden;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color:white;
+ 
 font-family: sans-serif;
 font-size: 3rem;
 
+
+
+}
+.hero h1{
+  background:linear-gradient(#6E48AA, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
 }
 .react-chatbot-kit-chat-container {
