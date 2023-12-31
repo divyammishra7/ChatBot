@@ -16,6 +16,7 @@ function App() {
   return (
     <div className="App">
 <ChatBot   headerTitle="SciAstra Bot"
+//aa
 steps={steps}
    className='bot' floating={true}/>
   {/* {showBot &&  <Chatbot   className='chat' config={config}
