@@ -4,12 +4,23 @@ import Research from "./Research";
 const steps=[
     {
       id: '1',
-      message: 'Hi I am chatbot',
-      trigger: '2',
+      message: 'Hi I am chatbot,what is your name',
+      trigger: 'user',
     },
     {
+        id:'user',
+        user:true,
+        trigger:'name'
+    },
+    {
+        id:'name',
+        message:'Hi {previousValue},nice to meet you how may i help you?',
+        trigger:'6'
+    },
+
+    {
       id: '2',
-      message:"What would you like to know about us",
+      message:"What would you like me to do",
      trigger:'6'
     },
     {
@@ -41,12 +52,17 @@ const steps=[
         { value: 4, label: 'Blogs', trigger: 'SciAstra' },
         { value: 5, label: 'Courses', trigger: 'Courses' },
         { value: 6, label: 'Research Institutes ', trigger: 'Insti' },
-        
+        {value:8,label:'Prerequiste for enrolling? ' ,trigger:'requiste'}
        
       ],
       
       
     },
+{
+    id:'requiste',
+    message:"No,there is no Prerequiste for enrolling in our courses",
+    trigger:'2',
+},
     {id:'Insti',
 message:"Sure,Here are some top Research Institutes In India",
 
@@ -100,7 +116,7 @@ trigger:'showInsti'},
     trigger:'misson-message'
 },
 {id:"misson-message",
-component:<Misson/>,
+message:"SciAstra aims to diversify scientific career paths in India, offering specialized courses in Physics and Biology for aspiring astrophysicists and medical researchers respectively. Our goal is to ignite passion and curiosity beyond traditional careers, empowering individuals to contribute significantly to fields like astrophysics and medical research. Join us in reshaping science education, inspiring a new generation of diverse scientists driving innovative discoveries and impactful careers beyond engineering and medicine.",
 trigger:'2'},
 {
     id:'SciAstra',

@@ -27,6 +27,7 @@ function Results({previousStep}) {
     },[])
     console.log(results);
   return (
+    
     <div className='res'>
         <h2>List of Top Performers of the year {year}</h2>
 <ul>
