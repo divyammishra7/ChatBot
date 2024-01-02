@@ -18,7 +18,7 @@ function Results({previousStep}) {
         console.log(year);
         let temp=[]
         for(var i=0; i<data.length; i++){
-            if(data[i].year===year){
+            if(data[i].year==='2021'){
                 temp=data[i].achi;
                 break;
             }

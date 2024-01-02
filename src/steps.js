@@ -50,17 +50,23 @@ const steps=[
         { value: 2, label: 'Misson', trigger: 'Misson' },
         { value: 3, label: 'Results', trigger: '7' },
         { value: 4, label: 'Blogs', trigger: 'SciAstra' },
-        { value: 5, label: 'Courses', trigger: 'Courses' },
+        { value: 5, label: 'Mode of Content', trigger: 'Courses' },
         { value: 6, label: 'Research Institutes ', trigger: 'Insti' },
-        {value:8,label:'Prerequiste for enrolling? ' ,trigger:'requiste'}
+        {value:8,label:'Prerequiste for enrolling' ,trigger:'requiste'},
+        {value:9,label:'Financial Aids at SciAstra' ,trigger:'aid'}
        
       ],
       
       
     },
+    {
+      id:'aid',
+      message:'Unlock the door to affordable learning at <h1>SciAstra</h1>, where our courses are consistently offered at discounted rates ranging from 20% off to an incredible 99% off. Embrace the flexibility of our dynamic pricing model,ensuring that you have access to top-notch education without breaking the bank.',
+      trigger:'2',
+    },
 {
     id:'requiste',
-    message:"No,there is no Prerequiste for enrolling in our courses",
+    message:"Embark on a knowledge-driven journey with SciAstra,where passion for science is your only prerequisite. Our courses aredesigned for curious minds with a thirst for scientific exploration, andthere are no specific prerequisites other than your enthusiasm for the subject.",
     trigger:'2',
 },
     {id:'Insti',
@@ -126,7 +132,8 @@ trigger:'2'},
 
 ,{
     id:'Courses',
-    message:"courses",
+    message:"You can dive into insightful blog posts that cover a variety of topics, from the latest advancements in your field to in-depth explorations of key concepts. You can challenge yourself with practice questions and mock tests designed to sharpen your skills and enhance your understanding.",
+
     trigger:'2'
 }
 
@@ -138,3 +145,4 @@ trigger:'2'},
 
   ];
   export default steps
+//   // Unlock the door to affordable learning at SciAstra, where our courses are consistently offered at discounted rates ranging from 20% off to an incredible 99% off. Embrace the flexibility of our dynamic pricing model,ensuring that you have access to top-notch education without breaking the bank.
