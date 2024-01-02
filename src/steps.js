@@ -30,7 +30,7 @@ const steps=[
     },
     {
       id: '4',
-      message: 'About us',
+      message: 'SciAstra is your gateway to a world-class education led by top scientists and faculties. Our platform is designed to provide you access to the expertise of leading minds in the scientific community, ensuring that you receive a premium educational experience.',
       trigger:'2'
       
       
@@ -49,19 +49,37 @@ const steps=[
        
         { value: 2, label: 'Misson', trigger: 'Misson' },
         { value: 3, label: 'Results', trigger: '7' },
-        { value: 4, label: 'Blogs', trigger: 'SciAstra' },
+        { value: 4, label: 'Trial Period', trigger: 'Trial' },
         { value: 5, label: 'Mode of Content', trigger: 'Courses' },
         { value: 6, label: 'Research Institutes ', trigger: 'Insti' },
+        {value:7,label:'Instructors' ,trigger:'instructors'},
         {value:8,label:'Prerequiste for enrolling' ,trigger:'requiste'},
-        {value:9,label:'Financial Aids at SciAstra' ,trigger:'aid'}
+        {value:9,label:'Financial Aids at SciAstra' ,trigger:'aid'},
+        {value:10,label:'Accessibility of courses' ,trigger:'access'}
+        
        
       ],
       
       
     },
     {
+      id:'instructors',
+      message:"Immerse yourself in the world of knowledge with SciAstra, where learning goes beyond boundaries. Our courses provide a unique opportunity to learn from distinguished scientists and research scholars hailing from the world's top institutes, including prestigious institutions like Harvard University, the University of Cambridge, and Michigan State University.",
+      trigger:'2'
+    },
+    {
+      id:'Trial',
+      message:"Embark on your learning journey with confidence by taking advantage of SciAstra's trial period, complete with a personalized touch. Book a 15-minute phone call where you can connect with our experts and delve deeper into the details of your desired course.",
+      trigger:'2'
+    },
+    {
+      id:'access',
+      message:'At SciAstra, we prioritize flexibility and convenience in your learning experience. Our lectures are designed to be accessible  from any device, including mobile phones and tablets. Whether you are on the go or prefer the comfort of your home, you can seamlessly access our educational content whenever and wherever you choose.',
+      trigger:'2'
+    },
+    {
       id:'aid',
-      message:'Unlock the door to affordable learning at <h1>SciAstra</h1>, where our courses are consistently offered at discounted rates ranging from 20% off to an incredible 99% off. Embrace the flexibility of our dynamic pricing model,ensuring that you have access to top-notch education without breaking the bank.',
+      message:'Unlock the door to affordable learning at SciAstra, where our courses are consistently offered at discounted rates ranging from 20% off to an incredible 99% off. Embrace the flexibility of our dynamic pricing model,ensuring that you have access to top-notch education without breaking the bank.',
       trigger:'2',
     },
 {
@@ -145,4 +163,4 @@ trigger:'2'},
 
   ];
   export default steps
-//   // Unlock the door to affordable learning at SciAstra, where our courses are consistently offered at discounted rates ranging from 20% off to an incredible 99% off. Embrace the flexibility of our dynamic pricing model,ensuring that you have access to top-notch education without breaking the bank.
+//   // SciAstra is your gateway to a world-class education led by top scientists and faculties. Our platform is designed to provide you access to the expertise of leading minds in the scientific community, ensuring that you receive a premium educational experience.
